@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #080808;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header Styling */
+.header-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-text h1 {
+    font-size: 2.5em;
+    color: #ff004f;
+}
+
+/* Course List Styling */
+.course-list {
+    display: grid;
+    gap: 40px;
+}
+
+.day {
+    font-size: 30px;
+    color: #00FFFF;
+    text-align: center;
+    grid-column: 1 / -1;
+    border-bottom: 3px ;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Course Styling */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 40px;
+}
+
+.courses div {
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    height: 100%;
+    transition: background 0.5s,transform 0.5s;
+}
+
+.courses div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+.courses div i {
+    color: #FFFFFF;
+    margin-right: 15px;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.courses h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.courses p {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/* Zoom Link Styling */
+.courses a {
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    border: 3px solid #ff004f;
+    padding: 16px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.courses a:hover {
+    background-color: #262626;
+}
